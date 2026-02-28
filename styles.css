@@ -15,8 +15,18 @@ img {
     display: block;
 }
 
-.h1-titulo {
+.titulo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #9ab8c7;
+    color: white;
+    padding: 10px ;
+}
+
+.titulo {
     font-weight: 500;
+    font-size: 1.5rem;
 }
 
 .span-titulo {
@@ -63,7 +73,7 @@ img {
 .hero-btn {
   padding: 12px 24px;
   font-size: 1rem;
-  font-weight: bold;
+  font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 1px;
   background-color: white;
@@ -72,10 +82,7 @@ img {
   border-radius: 20px;
   cursor: pointer;
   transition: transform 0.2s ease, background-color 0.2s ease;
-}
-
-.h2-articulos {
-    font-weight: 400;
+  text-decoration: none;
 }
 
 .hero-btn:hover {
@@ -84,11 +91,19 @@ img {
   transform: scale(1.03);
 }
 
+.h2-titulo {
+    font-weight: 400;
+    text-align: center;
+    margin-top: 40px;
+    color: #496e83;
+}
+
 .articulos-grid{
     display: flex;
     gap: 20px;
     padding: 40px 20px;
     max-width: 1200px;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -111,6 +126,7 @@ img {
     width: 100%;
     aspect-ratio: 2/2.7;
     overflow: hidden;
+    border-radius: inherit;
 }
 
 .art-img {
@@ -126,10 +142,10 @@ img {
 .art-titulo {
     display: inline-block;
     margin: 0 0 10px 0;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 400;
     color: black;
-    border-bottom: 2px solid #5e889e;
+    border-bottom: 3px solid #5e889e;
 }
 
 .art-texto {
@@ -138,9 +154,24 @@ img {
     color: black;
 }
 
+.footer {
+    background-color: #9ab8c7;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.8rem;
+    margin-top: 4rem;
+}
+
 @media(max-width: 768px) {
+    .hero-btn {
+        font-size: 0.7rem;
+        padding: 10px 20px;
+    }
+
     .articulos-grid {
         flex-direction: column;
+        width: 85%;
     }
 
     .art-img-container {
@@ -150,4 +181,13 @@ img {
     .art-titulo {
         font-size: 1.05rem;
     }
+
+    .h2-titulo {
+        font-size: 1.2rem;
+    }
+}
+
+
+.blog-layout {
+    
 }
